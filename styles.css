@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  color: white;
+  background-image: linear-gradient(to right bottom, #0f0c29, #302b63, #24243e);
+  font-family: "Roboto Mono", sans-serif;
+  text-align: center;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+.header {
+  margin: 3rem;
+  font-size: 1.25rem;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-input,
+.form-button {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border: none;
+  background: white;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.form-button {
+  cursor: pointer;
+  transition: all 0.4s ease;
+  outline: none;
+}
+
+.form-button:hover {
+  background-color: #302b63;
+  color: white;
+}
+
+/*------------------------------------------------------*/
+
+.todo-container {
+  margin-top: 5rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.todo-div {
+  width: 30%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  color: black;
+  background-color: white;
+}
+
+.todo-p {
+  flex: 1;
+}
+
+.fa-check {
+  background-color: rgb(20, 182, 5);
+  transition: all 0.4s ease;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.fa-check:hover {
+  background-color: rgb(21, 255, 0);
+}
+
+.fa-trash {
+  background-color: rgb(255, 0, 0);
+  transition: all 0.4s ease;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.fa-trash:hover {
+  background-color: rgb(145, 0, 0);
+}
+
+/* ---------------------------------------------*/
+
+.completed {
+  opacity: 0.3;
+  transition: all 0.4s ease;
+  text-decoration: line-through;
+  text-decoration-color: black;
+}
+
+.deleteAnimation {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all 0.65s ease;
+}
